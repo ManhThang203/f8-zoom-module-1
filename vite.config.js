@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
     // Đường dẫn gốc khi deploy (gh-pages cần đúng path)
-    base: "/f8-zoom-module-1",
+    base: process.env.NODE_ENV ===  "production" ? "/f8-zoom-module-1" : "/",
 
     // Thư mục chính chứa HTML, SCSS, JS
     root: "src",
@@ -20,8 +20,12 @@ export default defineConfig({
         // Khai báo các trang cần build (nhiều trang)
         rollupOptions: {
             input: {
+                signin: path.resolve(__dirname, "src/sign-in.html"),
+                signup: path.resolve(__dirname, "src/sign-up.html"),
                 index: path.resolve(__dirname, "src/index.html"),
-                about: path.resolve(__dirname, "src/about.html"),
+                collection: path.resolve(__dirname,"src/collection.html"),
+                payment: path.resolve(__dirname, "src/payment.html"),
+                account: path.resolve(__dirname, "src/account.html"),
                 // Thêm trang khác nếu có
             },
         },

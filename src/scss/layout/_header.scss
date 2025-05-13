@@ -1,0 +1,19 @@
+@use "/scss/mixins";
+
+.header{
+    height: 60px;
+    background: orange;
+
+    @include mixins.screen(xl){
+        background: green;
+    }
+     @include mixins.screen(lg){
+        background: rgb(216, 56, 219);
+    }
+     @include mixins.screen(md){
+        background: rgb(21, 37, 206);
+    }
+     @include mixins.screen(sm){
+        background: rgb(167, 20, 27);
+    }
+}
