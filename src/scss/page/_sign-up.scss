@@ -89,10 +89,10 @@ body{
             display: none;
         }
     }
-    &__button{
-        margin-top: 42px;
-        margin-left: 7rem;
-        width: 218px;
+    &__button-signup{
+        text-align: center;
+        margin-top: 4.2rem;
+        width: 283px;
         height: 48px;
         border-radius: 100px;
         font-family: "Manrope";
@@ -102,7 +102,7 @@ body{
         text-transform: uppercase;
         color: #FFF;
         background: #ED5A25;
-
+        
         &:hover{
             background: lighten(#ED5A25, 10%);
             box-shadow: 0 8px 20px rgba(237, 90, 37, 0.3);
@@ -110,10 +110,10 @@ body{
             transition: all 0.3s ease;
         }
         @include mixins.screen(lg){
-            display: none;
+            display: block;
         }
     }
-    &__section--signin{
+    &__section--signup{
         position: absolute;
         top: 0;
         right: 0;
@@ -135,7 +135,7 @@ body{
         }
        
     }
-    &__title-signin{
+    &__title-signup{
         margin-top: 8.6rem;
         margin-left: 6.8rem;
         color: var(--Color-Text-01);
@@ -154,7 +154,40 @@ body{
     }
 
 }
+//========== Auth-steps ==========
+.auth-steps{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1.8rem;
+    margin-left: 7rem;
+    &__item{
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
 
+         @include mixins.screen(lg){
+          display: none;
+        }
+    }
+    &__number{
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 0.8rem;
+        text-align: center;
+        line-height: 3.2rem;
+        background: #F0D3C8;
+        background-blend-mode: multiply;
+    }
+    &__text{
+        color: var(--Color-Text-01, #323232);
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    &__text:nth-child(2){
+        width: 340px;
+    }
+}
 //========== Start auth-form ==========
 .auth-form{
     display: flex;
@@ -206,6 +239,9 @@ body{
     }
     &__field{
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     &__field-icon{
         position: absolute;
@@ -215,6 +251,9 @@ body{
 
          @include mixins.screen(lg){
             left: 57px;
+        }
+         @include mixins.screen(md){
+                left: 32px;
         }
          @include mixins.screen(sm){
             left: 32px;
@@ -229,13 +268,7 @@ body{
         color: #fff;
         border-radius: 50%;
         background: var(--Primary-Colors);
-        
-        &:hover{
-            background: lighten(#ED5A25, 10%);
-            box-shadow: 0 8px 20px rgba(237, 90, 37, 0.3);
-            transform: translateY(-2px);
-            transition: all 0.3s ease;
-        }
+
         @include mixins.screen(lg){
             right: 41px;
         }
@@ -281,7 +314,6 @@ body{
     &__social-icons i {
         font-size: 2.5rem;
         color: #5C5C5C;
-        cursor: pointer;
     }
 }
 
