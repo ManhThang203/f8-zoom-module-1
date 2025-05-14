@@ -1,18 +1,8 @@
 @use "./reset";
 
-// Layout
-@use "./layout/grid";
-@use "./layout/header";
-@use "./layout/footer";
-
 // Pages
-@use "./page/home";
-// Component
-@use "./components/button";
-@use "./components/forms";
-@use "./components/course-item";
-
-
+@use "./page/sign-in";
+@use "./page/sign-up";
 
 // Common
 *{
@@ -24,7 +14,8 @@ html{
 }
 
 body{
-    font-size: 1.6rem;  
+    font-size: 1.6rem;
+    font-family: "Inter","Manrope","Quicksand";
 }
 
 button, input, textarea, select {
@@ -41,5 +32,4 @@ button{
 }
 a{
     color: inherit;
-    text-decoration: none;
 }

@@ -12,6 +12,12 @@ export default defineConfig({
     // Thư mục chứa các file tĩnh như ảnh, fonts, v.v.
     publicDir: "../public",
 
+    resolve: {
+        alias: {
+            '@': path.resolve(__dirname, '.'),
+        },
+    },
+
     build: {
         // Nơi xuất ra sản phẩm sau khi build
         outDir: "../dist",

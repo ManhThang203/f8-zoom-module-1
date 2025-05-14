@@ -1,19 +1,173 @@
 @use "/scss/mixins";
+@use "../variables";
 
 .header{
-    height: 60px;
-    background: orange;
+    width: 100vw;
+    // Start Topbar
+    &__topbar{
+        height: 3.9rem;
+        background: variables.$primary-color;
+        box-shadow: 0px 4.206px 11.25px 0px rgba(244, 244, 244, 0.50);
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    &__nav-left{
+        margin-left: 12.6rem;
+    }
+    &__link-right,
+    &__select,
+    &__account-link{
+        color: variables.$color-header;
+        font-family: Quicksand;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.8rem;
+    }
+    &__nav-right{
+        display: flex;
+        gap: 1.5rem;
+        margin-right: 10.9rem;
+    }
+    &__select{
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    &__account{
+        display: flex;
+        align-items: center;
+    }
+    // Start Main
+    &__main{
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        height: 9.5rem;
+        background: variables.$background-header;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        margin-left: 12.5rem;
+    }
+    &__logo-text{
+        color: variables.$logo-text;
+        font-family: "Poppins";
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+    &__logo-highlight{
+        color: variables.$primary-color;
+        font-family: "Poppins";
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+    // Start Form Search
+    &__search-form{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 48rem;
+        height: 4.2rem;
+        line-height: 4.2;
+        border: 1px solid variables.$color-header;
+        border-radius: 999px;
+        margin-right: 10.1rem;
+        background-color : variables.$color-header;
+    }
+    &__select-category{
+        margin-left: 1.8rem;
+        color: variables.$color-search;
+        font-family: "Manrope";
+        font-size: 14.72px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
 
-    @include mixins.screen(xl){
-        background: green;
+        outline: none;
+        border: none;
     }
-     @include mixins.screen(lg){
-        background: rgb(216, 56, 219);
+    &__dividing-brick{
+        width: 1.051px;
+        height: 39.954px;
+        background: #FFF0EC;
     }
-     @include mixins.screen(md){
-        background: rgb(21, 37, 206);
+    &__search-input{
+        color: variables.$color-search;
+        font-family: "Manrope";
+        outline: none;
+        border: none;
+        background: transparent;
     }
-     @include mixins.screen(sm){
-        background: rgb(167, 20, 27);
+    &__search-button{
+        color: variables.$color-search;
+
+    }
+    // Start Header Navigation
+    &__bottom{
+        background: variables.$color-header;
+        height: 5.4rem;
+        line-height: 5.4rem;
+        box-shadow: 0px 4.206px 11.25px 0px rgba(244, 244, 244, 0.50);
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding-left: 2.6rem;
+    }
+    &__menu-link{
+        color: variables.$logo-text;
+        font-family: "Quicksand";
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    &__menu-item--has-dropdow::after{
+        position: relative;
+        left: 5px;
+        content: "\f078";
+        font-family: "Font Awesome 6 Free";
+        right: 1.5rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: variables.$logo-text;
+    }
+    &__hotline{
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        padding-right: 1.6rem;
+    }
+    &__hotline-icon{
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 2px solid variables.$color-hotline;
+        border-radius: 50%;
+        font-size: 1.2rem;
+    }
+    &__hotline-icon::before{
+        position: relative;
+        top: -16px;
+        left: 5px;
+        content: "\f095";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: variables.$logo-text;
+    }
+    &__hotline-text{
+        color: variables.$color-hotline;
+        font-family: "Quicksand";
+        font-size: 1.4rem;
+        font-weight: 600;
     }
 }
