@@ -63,7 +63,7 @@
                                     </article>
                                     <!-- End card Left -->
                                     
-                                    <div class="main-banner__character">
+                                    <div class="main-banner__character" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                         <!-- Nhân vật chính -->
                                             <img src="./img/businessman.png" alt="Đại diện nhân vật" />
                                     </div>
@@ -100,11 +100,11 @@
                                     <!-- End card right -->
 
                                     <!-- Hộp quà 1 -->
-                                    <div class="main-banner__gift main-banner__gift--top-right">
+                                    <div class="main-banner__gift main-banner__gift--top-right" data-aos="zoom-in-down">
                                     <img src="./img/gift-box-right.png" alt="gift box right">
                                     </div>
                                     <!-- Hộp quà 2 -->
-                                    <div class="main-banner__gift main-banner__gift--bottom-left">
+                                    <div class="main-banner__gift main-banner__gift--bottom-left" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                                     <img src="./img/gift-box-left.png" alt="gift box left">
                                     </div>
                                 </div>
@@ -166,14 +166,14 @@
                             <div class="features__list">
                                 <div class="row">
                                     <div class="col">
-                                        <div class="features__item">
+                                        <div class="features__item" data-aos="fade-right">
                                             <span class="features__rounded-shape"></span>
                                             <span class="features__rounded-shape-in"></span>
                                             <img src="./img/robot-giaohang.png" alt="Robot giao hàng" class="features__image-left">
                                         </div>
                                     </div>
                                     <div class="col">
-                                        <div class="features__item">
+                                        <div class="features__item" data-aos="fade-left"    >
                                             <span class="features__rounded-bottom"></span>
                                         <img src="./img/list-item.png" alt="Thanh toán hoàn tiền" class="features__image-right">
                                         </div>
@@ -462,7 +462,7 @@
                     <!-- Start Row Promo Banner -->
                     <div class="row">
                         <div class="col">
-                            <section class="promo-banner">
+                            <section class="promo-banner"  data-aos-anchor-placement="center-bottom"> 
                                 <span class="promo-banner__triangular-one"></span>
                                 <span class="promo-banner__triangular-two"></span>
                                 <span class="promo-banner__triangular-three"></span>
@@ -476,7 +476,7 @@
                                         <i class="fa-solid fa-arrow-right"></i>
                                     </a>
                                 </div>
-                                <div class="promo-banner__image">
+                                <div class="promo-banner__image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                                     <img src="./img/promo-banner.png" alt="promo-banner" />
                                 </div>
                             </section>
@@ -519,14 +519,14 @@
                                     <div class="feature-section__items">
                                         <div class="row">
                                             <div class="col-6">
-                                                <div class="feature-section__card">
+                                                <div class="feature-section__card" data-aos="fade-right">
                                                     <span class="feature-section__shape--outer"></span>
                                                     <span class="feature-section__shape--inner"></span>
                                                     <img src="./img/feature-card-1.png" alt="feature-card" class=" feature-section__image--left">
                                                 </div>
                                             </div>
                                             <div class="col-6">
-                                                <div class="feature-section__card">
+                                                <div class="feature-section__card" data-aos="fade-left">
                                                     
                                                     <img src="./img/feature-card-2.png" alt="feature-card" class=" feature-section__image--right">
                                                 </div>
@@ -694,7 +694,7 @@
                             <section class="card-voucher">
                                 <div class="row">
                                     <div class="col-6">
-                                        <div class="card-voucher__highlight">
+                                        <div class="card-voucher__highlight" data-aos="fade-right">
                                             <div class="card-voucher__highlight-icon">
                                                 <!-- Hình ảnh trái tim và quà tặng -->
                                                 <img src="./img/heart-icon.png" alt="Heart Icon" />
@@ -1202,7 +1202,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="news-section">
-                                <div class="news-list">
+                                <div class="news-list" data-aos="zoom-in">
                                     <div class="row">
                                         <div class="col-4">
                                             <div class="news-card">
@@ -1251,7 +1251,7 @@
                                         View all 
                                         <i class="fa-solid fa-arrow-right"></i>
                                     </a>
-                                    <div class="top-seller-banner__media">
+                                    <div class="top-seller-banner__media" data-aos="fade-left">
                                         <img src="./img/promo-banner-2.png" alt="Promo Gift Card" class="top-seller-banner__image" />
                                     </div>
                                 </div>
@@ -1264,5 +1264,9 @@
     </main>
      <%- include("./partials/footer.ejs") %>
      <script type="module" src="./main.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+       AOS.init();
+    </script>
 </body>
 </html>
