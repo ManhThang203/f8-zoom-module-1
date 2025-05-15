@@ -4,10 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-in</title>
-    <%- include("./partials/head.ejs") %>
 </head>
 <body>
-      
-      <script type="module" src="./main.js"></script>
+     <main>
+        <section class="main-banner">
+    <!-- Tiêu đề ẩn để tránh lỗi accessibility -->
+    <h2 class="visually-hidden">Main Promotional Banner</h2>
+
+    <span class="main-banner__blur"></span>
+    <span class="main-banner__rounded"></span>
+    <span class="main-banner__rounded-in"></span>
+    <span class="main-banner__round-color"></span>
+
+    <div class="main-banner__content">
+      <!-- Start card Left -->
+      <article class="card">
+        <div class="card__inner">
+          <header class="card__header">
+            <h3 class="card__title">Brawlhalla</h3>
+            <span class="card__title--superstar">Superstar</span>
+            <span class="card__subtitle">Editor</span>
+          </header>
+
+          <div class="card__content">
+            <figure class="card__figure">
+              <img src="./img/banner-card-left-2.png" alt="Bear Character" class="card__image" />
+            </figure>
+            <figure class="card__figure">
+              <img src="./img/banner-card-left-1.png" alt="Deer Character" class="card__image" />
+            </figure>
+          </div>
+
+          <footer class="card__footer">
+            <h4 class="card__product">EBay USD Gift Card</h4>
+            <div class="card__info">
+              <div class="card__item">
+                <div class="card__rating">
+                  <i class="fa-solid fa-star"></i>
+                  <span class="card__value">4.8</span>
+                </div>
+                <div class="card__views">
+                  <i class="fa-solid fa-eye"></i>
+                  <span class="card__value">120.9</span>
+                </div>
+              </div>
+              <a href="#" class="card__button" aria-label="View details">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </footer>
+        </div>
+      </article>
+      <!-- End card Left -->
+
+      <figure class="main-banner__character">
+        <img src="./img/businessman.png" alt="Đại diện nhân vật" />
+      </figure>
+
+      <!-- Start card Right -->
+      <article class="card-right">
+        <div class="card-right__inner">
+          <header class="card-right__header">
+            <h3 class="card-right__title">FORTNITE</h3>
+            <img src="./img/img-banner-rignt.png" alt="img banner right" />
+          </header>
+
+          <footer class="card-right__footer">
+            <h4 class="card-right__product">Fortnite card</h4>
+            <div class="card-right__info">
+              <div class="card-right__item">
+                <div class="card-right__rating">
+                  <i class="fa-solid fa-star"></i>
+                  <span class="card-right__value">4.8</span>
+                </div>
+                <div class="card-right__views">
+                  <i class="fa-solid fa-eye"></i>
+                  <span class="card-right__value">120.9</span>
+                </div>
+              </div>
+              <a href="#" class="card-right__button" aria-label="View details">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </footer>
+        </div>
+      </article>
+      <!-- End card Right -->
+
+      <!-- Hộp quà 1 -->
+      <figure class="main-banner__gift main-banner__gift--top-right">
+        <img src="./img/gift-box-right.png" alt="gift box right" />
+      </figure>
+
+      <!-- Hộp quà 2 -->
+      <figure class="main-banner__gift main-banner__gift--bottom-left">
+        <img src="./img/gift-box-left.png" alt="gift box left" />
+      </figure>
+    </div>
+  </section>
+     </main>
 </body>
 </html>
