@@ -21,36 +21,49 @@
       referrerpolicy="no-referrer"
 />
 
+<!-- Animation -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <script type="module" crossorigin src="/f8-zoom-module-1/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-  <script type="module" crossorigin src="/f8-zoom-module-1/assets/main-l-OJHesY.js"></script>
-  <link rel="stylesheet" crossorigin href="/f8-zoom-module-1/assets/main-DAIAVWj9.css">
+  <script type="module" crossorigin src="/f8-zoom-module-1/assets/main-wVs2Jzn4.js"></script>
+  <link rel="stylesheet" crossorigin href="/f8-zoom-module-1/assets/main-DyxxZgJn.css">
 </head>
 <body>
     <!-- Start Header -->
 <header class="header">
         <!-- Start header Topbar -->
         <div class="header__topbar">
-            <div class="header__nav">
-                <div class="header__nav-left">
-                    <a href="#!" class="header__link-right">Về chúng tôi</a>
-                </div>
-                <div class="header__nav-right">
-                    <select class="header__select">
-                        <option>Trung tâm hỗ trợ</option>
-                    </select>
-                    <!-- <a href="#!" class="header__link">Trung tâm hỗ trợ</a> -->
-                    <div class="header__language-selector">
-                    <select class="header__select">
-                        <option>ENG</option>
-                    </select>
+            <div class="container">
+                <div class="header__nav row">
+                    <div class="header__nav-left col">
+                        <a href="#!" class="header__link-right">Về chúng tôi</a>
+                        <img src="./img/icon-mb.svg" alt="icon mb" class="header__icon-mb" style="display: none;"> 
                     </div>
-                    <div class="header__account">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                           <path fill-rule="evenodd" clip-rule="evenodd" d="M8.46282 1.33325C12.1448 1.33325 15.1295 4.31792 15.1295 7.99992C15.1318 9.53851 14.5997 11.0301 13.6241 12.2199L13.6375 12.2346L13.5495 12.3093C12.9242 13.0487 12.1451 13.6427 11.2666 14.0499C10.388 14.457 9.43114 14.6675 8.46282 14.6666C6.49615 14.6666 4.72948 13.8153 3.50948 12.4619L3.37615 12.3086L3.28815 12.2353L3.30148 12.2193C2.32609 11.0297 1.79401 9.53828 1.79615 7.99992C1.79615 4.31792 4.78082 1.33325 8.46282 1.33325ZM8.46282 11.3333C7.22282 11.3333 6.10215 11.7279 5.26748 12.2706C6.18921 12.9619 7.31066 13.3348 8.46282 13.3333C9.61497 13.3348 10.7364 12.9619 11.6581 12.2706C10.7043 11.6595 9.59556 11.3343 8.46282 11.3333ZM8.46282 2.66659C7.45917 2.66656 6.47587 2.94973 5.62596 3.48355C4.77605 4.01738 4.09402 4.78018 3.65826 5.6843C3.22249 6.58842 3.05069 7.59714 3.16258 8.59454C3.27448 9.59193 3.66554 10.5375 4.29082 11.3226C5.37148 10.5473 6.84615 9.99992 8.46282 9.99992C10.0795 9.99992 11.5541 10.5473 12.6348 11.3226C13.2601 10.5375 13.6512 9.59193 13.763 8.59454C13.8749 7.59714 13.7031 6.58842 13.2674 5.6843C12.8316 4.78018 12.1496 4.01738 11.2997 3.48355C10.4498 2.94973 9.46647 2.66656 8.46282 2.66659ZM8.46282 3.99992C9.17006 3.99992 9.84834 4.28087 10.3484 4.78097C10.8485 5.28106 11.1295 5.95934 11.1295 6.66659C11.1295 7.37383 10.8485 8.05211 10.3484 8.5522C9.84834 9.0523 9.17006 9.33325 8.46282 9.33325C7.75557 9.33325 7.07729 9.0523 6.5772 8.5522C6.0771 8.05211 5.79615 7.37383 5.79615 6.66659C5.79615 5.95934 6.0771 5.28106 6.5772 4.78097C7.07729 4.28087 7.75557 3.99992 8.46282 3.99992ZM8.46282 5.33325C8.10919 5.33325 7.77006 5.47373 7.52001 5.72378C7.26996 5.97382 7.12948 6.31296 7.12948 6.66659C7.12948 7.02021 7.26996 7.35935 7.52001 7.60939C7.77006 7.85944 8.10919 7.99992 8.46282 7.99992C8.81644 7.99992 9.15558 7.85944 9.40562 7.60939C9.65567 7.35935 9.79615 7.02021 9.79615 6.66659C9.79615 6.31296 9.65567 5.97382 9.40562 5.72378C9.15558 5.47373 8.81644 5.33325 8.46282 5.33325Z" fill="white"/>
-                        </svg>
-                        <a href="#!" class="header__account-link">
-                            Tài Khoản
-                        </a>
+                    <div class="header__nav-right col ">
+                        <select class="header__select">
+                            <option>Trung tâm hỗ trợ</option>
+                        </select>
+                        <!-- <a href="#!" class="header__link">Trung tâm hỗ trợ</a> -->
+                        <div class="header__language-selector">
+                            <select class="header__select">
+                                <option>ENG</option>
+                            </select>
+                        </div>
+                        <div class="header__account">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.46282 1.33325C12.1448 1.33325 15.1295 4.31792 15.1295 7.99992C15.1318 9.53851 14.5997 11.0301 13.6241 12.2199L13.6375 12.2346L13.5495 12.3093C12.9242 13.0487 12.1451 13.6427 11.2666 14.0499C10.388 14.457 9.43114 14.6675 8.46282 14.6666C6.49615 14.6666 4.72948 13.8153 3.50948 12.4619L3.37615 12.3086L3.28815 12.2353L3.30148 12.2193C2.32609 11.0297 1.79401 9.53828 1.79615 7.99992C1.79615 4.31792 4.78082 1.33325 8.46282 1.33325ZM8.46282 11.3333C7.22282 11.3333 6.10215 11.7279 5.26748 12.2706C6.18921 12.9619 7.31066 13.3348 8.46282 13.3333C9.61497 13.3348 10.7364 12.9619 11.6581 12.2706C10.7043 11.6595 9.59556 11.3343 8.46282 11.3333ZM8.46282 2.66659C7.45917 2.66656 6.47587 2.94973 5.62596 3.48355C4.77605 4.01738 4.09402 4.78018 3.65826 5.6843C3.22249 6.58842 3.05069 7.59714 3.16258 8.59454C3.27448 9.59193 3.66554 10.5375 4.29082 11.3226C5.37148 10.5473 6.84615 9.99992 8.46282 9.99992C10.0795 9.99992 11.5541 10.5473 12.6348 11.3226C13.2601 10.5375 13.6512 9.59193 13.763 8.59454C13.8749 7.59714 13.7031 6.58842 13.2674 5.6843C12.8316 4.78018 12.1496 4.01738 11.2997 3.48355C10.4498 2.94973 9.46647 2.66656 8.46282 2.66659ZM8.46282 3.99992C9.17006 3.99992 9.84834 4.28087 10.3484 4.78097C10.8485 5.28106 11.1295 5.95934 11.1295 6.66659C11.1295 7.37383 10.8485 8.05211 10.3484 8.5522C9.84834 9.0523 9.17006 9.33325 8.46282 9.33325C7.75557 9.33325 7.07729 9.0523 6.5772 8.5522C6.0771 8.05211 5.79615 7.37383 5.79615 6.66659C5.79615 5.95934 6.0771 5.28106 6.5772 4.78097C7.07729 4.28087 7.75557 3.99992 8.46282 3.99992ZM8.46282 5.33325C8.10919 5.33325 7.77006 5.47373 7.52001 5.72378C7.26996 5.97382 7.12948 6.31296 7.12948 6.66659C7.12948 7.02021 7.26996 7.35935 7.52001 7.60939C7.77006 7.85944 8.10919 7.99992 8.46282 7.99992C8.81644 7.99992 9.15558 7.85944 9.40562 7.60939C9.65567 7.35935 9.79615 7.02021 9.79615 6.66659C9.79615 6.31296 9.65567 5.97382 9.40562 5.72378C9.15558 5.47373 8.81644 5.33325 8.46282 5.33325Z" fill="white"/>
+                            </svg>
+                            <a href="#!" class="header__account-link">
+                                Tài Khoản
+                            </a>
+                        </div>
+                        <div class="header__hotline-mb">
+                            <span class="header__hotline-md__icon" style="display: none;">
+                            </span>
+                            <span class="header__hotline-mb__text" style="display: none;">
+                                Hotline: 19200 10800
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -58,42 +71,45 @@
         <!-- End header__topbar -->
         <!-- Start Header Main -->
         <div class="header__main">
-            <div class="header__logo">
-                <img src="./img/logo-header.png" alt="logo-header" class="header__logo-image">
-                <span class="header__logo-text">
-                    <strong>Nap</strong>
-                    <strong class="header__logo-highlight">Tien</strong>
-                </span>
+            <div class="container">
+                <div class="row">
+                    <div class="header__logo col">
+                        <img src="./img/logo-header.png" alt="logo-header" class="header__logo-image">
+                        <span class="header__logo-text">
+                            <strong>Nap</strong>
+                            <strong class="header__logo-highlight">Tien</strong>
+                        </span>
+                    </div>
+                    <!-- End Header Main -->
+                    <!-- Start Form Search -->
+                    <form class="header__search-form col">
+                        <div class="header__search-category">
+                            <select class="header__select-category">
+                                <option>All categories</option>
+                            </select>
+                        </div>
+                        <span class="header__dividing-brick"></span>
+                        <input type="search" class="header__search-input" placeholder="Search">
+                        <button class="header__search-button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <!-- End Form Search -->
+                </div>
             </div>
-            <!-- End Header Main -->
-            <!-- Start Form Search -->
-            <form class="header__search-form">
-            <div class="header__search-category">
-                <select class="header__select-category">
-                    <option>All categories</option>
-                </select>
-            </div>
-            <span class="header__dividing-brick"></span>
-            <input type="search" class="header__search-input" placeholder="Search">
-            <button class="header__search-button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            </form>
-            <!-- End Form Search -->
         </div>
         <!-- End Header Main -->
 
         <!-- Start Header Navigation -->
          <div class="header__bottom">
-             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <nav class="header__nav">
-                             <ul class="header__menu">
+            <div class="container">
+                        <nav class="header__nav row">
+                             <ul class="header__menu col">
                                 <li class="header__menu-item">
                                     <a href="#!" class="header__menu-link">
                                         Trang chủ
                                     </a>
+                                    <img src="./img/icon-menu.svg" alt="icon-menu" class="header__icon-menu" style="display: none;">
                                 </li>
                                 <li class="header__menu-item header__menu-item--has-dropdow">
                                     <a href="#!" class="header__menu-link">
@@ -106,9 +122,11 @@
                                     </a>
                                 </li>
                              </ul>
-                             <div class="header__hotline">
+                             <div class="header__hotline col">
                                 <span class="header__hotline-icon">
                                 </span>
+                                <img src="./img/search-menu.svg" alt="search-menu" class="header__search-menu" style="display: none;">
+                                <img src="./img/user-menu.svg" alt="search-menu" class="header__user-menu" style="display: none;">
                                 <span class="header__hotline-text">
                                     Hotline: 19200 10800
                                 </span>
@@ -116,7 +134,6 @@
                         </nav>
                     </div>
                 </div>
-             </div>
          </div>
         <!-- End Header Navigation -->
 </header>
@@ -175,13 +192,13 @@
                                     </article>
                                     <!-- End card Left -->
                                     
-                                    <div class="main-banner__character">
+                                    <div class="main-banner__character" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                         <!-- Nhân vật chính -->
                                             <img src="./img/businessman.png" alt="Đại diện nhân vật" />
                                     </div>
 
                                 <!-- Start card righ -->
-                                    <article class="card-right">
+                                    <article class="card-right d-lg-none d-md-none">
                                         <div class="card-right__inner">
                                             <header class="card-right__header">
                                                 <h2 class="card-right__title">
@@ -212,11 +229,11 @@
                                     <!-- End card right -->
 
                                     <!-- Hộp quà 1 -->
-                                    <div class="main-banner__gift main-banner__gift--top-right">
+                                    <div class="main-banner__gift main-banner__gift--top-right" data-aos="zoom-in-down">
                                     <img src="./img/gift-box-right.png" alt="gift box right">
                                     </div>
                                     <!-- Hộp quà 2 -->
-                                    <div class="main-banner__gift main-banner__gift--bottom-left">
+                                    <div class="main-banner__gift main-banner__gift--bottom-left" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                                     <img src="./img/gift-box-left.png" alt="gift box left">
                                     </div>
                                 </div>
@@ -231,7 +248,7 @@
                         <div class="col">
                          <!-- Start benefits -->
                             <div class="benefits">
-                                <ul class="benefits__list row">
+                                <ul class="benefits__list row row-cols-xl-3">
                                 <li class="benefits__item col">
                                     <div class="benefits__icon-wrapper">
                                     <img src="./img/benefits-01.svg" alt="benefits-01">
@@ -250,13 +267,13 @@
                                     </div>
                                     <p class="benefits__text">Hoàn tiền</p>
                                 </li>
-                                <li class="benefits__item col">
+                                <li class="benefits__item col col-xl-6 gy-xl-3">
                                     <div class="benefits__icon-wrapper">
                                     <img src="./img/benefits-04.svg" alt="benefits-04">
                                     </div>
                                     <p class="benefits__text">Bảo mật</p>
                                 </li>
-                                <li class="benefits__item col">
+                                <li class="benefits__item col col-xl-6 gy-xl-3">
                                     <div class="benefits__icon-wrapper">
                                     <img src="./img/benefits-05.svg" alt="benefits-05">
                                     </div>
@@ -277,15 +294,15 @@
                         <div class="features">
                             <div class="features__list">
                                 <div class="row">
-                                    <div class="col">
-                                        <div class="features__item">
+                                    <div class="col col-xl-12">
+                                        <div class="features__item" data-aos="fade-right">
                                             <span class="features__rounded-shape"></span>
                                             <span class="features__rounded-shape-in"></span>
                                             <img src="./img/robot-giaohang.png" alt="Robot giao hàng" class="features__image-left">
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="features__item">
+                                    <div class="col col-xl-12 gy-xl-3">
+                                        <div class="features__item" data-aos="fade-left"    >
                                             <span class="features__rounded-bottom"></span>
                                         <img src="./img/list-item.png" alt="Thanh toán hoàn tiền" class="features__image-right">
                                         </div>
@@ -302,28 +319,43 @@
                      <div class="row">
                         <div class="col">
                             <nav class="category-tabs">
-                                <ul class="category-tabs__list row">
-                                    <li class="category-tabs__item category-tabs__item-width col-2">
+                                <ul class="category-tabs__list row row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+                                    <li class="category-tabs__item-md category-tabs__item-width col-2 col-lg-3" style="display: none;">
+                                    <button class="category-tabs__button category-tabs__button--active">
+                                        Tất cả
+                                    </button>
+                                    </li>
+                                     <li class="category-tabs__item-md category-tabs__item-width col-2 col-lg-3" style="display: none;">
+                                    <button class="category-tabs__button category-tabs__button">
+                                        Gợi ý cho bạn
+                                    </button>
+                                    </li>
+                                     <li class="category-tabs__item-md category-tabs__item-width col-2 col-lg-3 gy-sm-2" style="display: none;">
+                                    <button class="category-tabs__button category-tabs__button">
+                                        Deal siêu hot
+                                    </button>
+                                    </li>
+                                    <li class="category-tabs__item category-tabs__item-width col-2 col-lg-3">
                                     <button class="category-tabs__button category-tabs__button--active">
                                         Hôm nay có gì
                                     </button>
                                     </li>
-                                    <li class="category-tabs__item category-tabs__item-width col-2">
+                                    <li class="category-tabs__item category-tabs__item-width col-2 col-lg-3">
                                     <button class="category-tabs__button">
                                         Gợi ý cho bạn
                                     </button>
                                     </li>
-                                    <li class="category-tabs__item category-tabs__item-width col-2">
+                                    <li class="category-tabs__item category-tabs__item-width col-2 col-lg-3">
                                     <button class="category-tabs__button">
                                         Gợi ý cho bạn
                                     </button>
                                     </li>
-                                    <li class="category-tabs__item category-tabs__item-width col-2">
+                                    <li class="category-tabs__item category-tabs__item-width col-2 col-lg-3 gy--2">
                                     <button class="category-tabs__button">
                                         Gợi ý cho bạn
                                     </button>
                                     </li>
-                                    <li class="category-tabs__item category-tabs__item-width col-4">
+                                    <li class="category-tabs__item category-tabs__item-width col-4 col-lg-3 gy-lg-2">
                                     <button class="category-tabs__button">
                                         Gợi ý cho bạn
                                     </button>
@@ -336,7 +368,7 @@
                     <!-- End Row category tabs -->
 
                     <!-- Start Row product listing -->
-                    <div class="row">
+                    <div class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-2">
                         <div class="col gy-2">
                             <!-- Start courses item -->
                                 <article class="product-card">
@@ -359,7 +391,7 @@
                                 </article>
                             <!-- End courses item -->
                         </div>
-                    <div class="col gy-2">
+                        <div class="col gy-2">
                             <!-- Start courses item -->
                                 <article class="product-card">
                                     <div class="product-card__image-wrapper">
@@ -447,7 +479,7 @@
                                 </article>
                             <!-- End courses item -->
                         </div>
-                        <div class="col gy-3">
+                        <div class="col gy-2">
                             <!-- Start courses item -->
                                 <article class="product-card">
                                     <div class="product-card__image-wrapper">
@@ -574,7 +606,7 @@
                     <!-- Start Row Promo Banner -->
                     <div class="row">
                         <div class="col">
-                            <section class="promo-banner">
+                            <section class="promo-banner"  data-aos-anchor-placement="center-bottom"> 
                                 <span class="promo-banner__triangular-one"></span>
                                 <span class="promo-banner__triangular-two"></span>
                                 <span class="promo-banner__triangular-three"></span>
@@ -588,16 +620,14 @@
                                         <i class="fa-solid fa-arrow-right"></i>
                                     </a>
                                 </div>
-                                <div class="promo-banner__image">
+                                <div class="promo-banner__image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                                     <img src="./img/promo-banner.png" alt="promo-banner" />
                                 </div>
                             </section>
                         </div>
                     </div>
                     <!-- End Row Promo Banner -->
-                    <div class="row">
-                        <div class="col"></div>
-                    </div>
+
                     <!-- Start Row category header -->
                     <div class="row">
                         <div class="col">
@@ -606,7 +636,7 @@
                                     <div class="col-6">
                                         <h2 class="category-header__title">Sản phẩm theo danh mục</h2>
                                     </div>
-                                    <div class="col-2 offset-4">
+                                    <div class="col-6">
                                         <div class="category-header__actions">
                                             <a href="#" class="category-header__link">Tất cả danh mục</a>
                                             <button class="category-header__button btn-category">
@@ -631,14 +661,14 @@
                                     <div class="feature-section__items">
                                         <div class="row">
                                             <div class="col-6">
-                                                <div class="feature-section__card">
+                                                <div class="feature-section__card" data-aos="fade-right">
                                                     <span class="feature-section__shape--outer"></span>
                                                     <span class="feature-section__shape--inner"></span>
                                                     <img src="./img/feature-card-1.png" alt="feature-card" class=" feature-section__image--left">
                                                 </div>
                                             </div>
                                             <div class="col-6">
-                                                <div class="feature-section__card">
+                                                <div class="feature-section__card" data-aos="fade-left">
                                                     
                                                     <img src="./img/feature-card-2.png" alt="feature-card" class=" feature-section__image--right">
                                                 </div>
@@ -652,7 +682,7 @@
                     </div>
                     <!-- End Row features -->
                     <!-- Start Row product listing -->
-                    <div class="row">
+                    <div class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-2 ">
                         <div class="col gy-3">
                             <!-- Start courses item -->
                                 <article class="product-card">
@@ -741,7 +771,7 @@
                                 </article>
                             <!-- End courses item -->
                         </div>
-                        <div class="col gy-3">
+                        <div class="col  gy-3">
                             <!-- Start courses item -->
                                 <article class="product-card">
                                     <div class="product-card__image-wrapper">
@@ -784,7 +814,7 @@
                                     <div class="col-6">
                                         <h2 class="category-header__title">Sản phẩm bán chạy</h2>
                                     </div>
-                                    <div class="col-2 offset-4">
+                                    <div class="col-6">
                                         <div class="category-header__actions">
                                             <a href="#" class="category-header__link">Tất cả danh mục</a>
                                             <button class="category-header__button btn-category">
@@ -804,9 +834,9 @@
                     <div class="row">
                         <div class="col">
                             <section class="card-voucher">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="card-voucher__highlight">
+                                <div class="row row-cols-xxl-4">
+                                    <div class="col-6 col-xxl-12">
+                                        <div class="card-voucher__highlight" data-aos="fade-right">
                                             <div class="card-voucher__highlight-icon">
                                                 <!-- Hình ảnh trái tim và quà tặng -->
                                                 <img src="./img/heart-icon.png" alt="Heart Icon" />
@@ -820,7 +850,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-2 col-lg-4 col-md-5 col-sm-6 col gy-xxl-3 ">
                                         <!-- Start courses item -->
                                             <article class="product-card">
                                                 <div class="product-card__image-wrapper">
@@ -842,7 +872,7 @@
                                             </article>
                                         <!-- End courses item -->
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-2 col-lg-4 col-md-5 gy-xxl-3">
                                         <!-- Start courses item -->
                                             <article class="product-card">
                                                 <div class="product-card__image-wrapper">
@@ -864,7 +894,7 @@
                                             </article>
                                         <!-- End courses item -->
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-2 col-lg-4 col-md-5 gy-xxl-3">
                                         <!-- Start courses item -->
                                             <article class="product-card">
                                                 <div class="product-card__image-wrapper">
@@ -897,10 +927,10 @@
                         <div class="col">
                             <section class="category-header">
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col">
                                         <h2 class="category-header__title">Sản phẩm mới nhất</h2>
                                     </div>
-                                    <div class="col-2 offset-4">
+                                    <div class="col ">
                                         <div class="category-header__actions">
                                             <a href="#" class="category-header__link">Tất cả danh mục</a>
                                             <button class="category-header__button btn-category">
@@ -917,7 +947,7 @@
                     </div>
                     <!-- End Row category header -->
                      <!-- Start Row product listing -->
-                    <div class="row">
+                    <div class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-2">
                         <div class="col gy-3">
                             <!-- Start courses item -->
                                 <article class="product-card">
@@ -1033,7 +1063,7 @@
                      <div class="row">
                         <div class="col">
                             <section class="product-section">
-                                <div class="row">
+                                <div class="row  row-cols-xl-3  row-cols-lg-2 row-cols-md-1">
                                     <div class="col-4">
                                         <div class="product-category">
                                             <div class="product-category__header">
@@ -1202,7 +1232,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-4 gy-lg-2">
                                         <div class="product-category">
                                             <div class="product-category__header">
                                                 <h3 class="product-category__title">
@@ -1314,9 +1344,9 @@
                     <div class="row">
                         <div class="col">
                             <div class="news-section">
-                                <div class="news-list">
+                                <div class="news-list" data-aos="zoom-in">
                                     <div class="row">
-                                        <div class="col-4">
+                                        <div class="col-4 col-md-12">
                                             <div class="news-card">
                                                 <img src="./img/news-card-1.png" alt="news-card" class="news-card__image">
                                                 <p class="news-card__description">
@@ -1324,7 +1354,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-4 col-md-12">
                                             <div class="news-card news-card--highlighted">
                                                 <img src="./img/news-card-2.png" alt="news-card" class="news-card__image">
                                                 <p class="news-card__description">
@@ -1332,7 +1362,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-4 col-md-12">
                                             <div class="news-card">
                                                 <img src="./img/news-card-3.png" alt="news-card" class="news-card__image">
                                                 <p class="news-card__description">
@@ -1363,7 +1393,7 @@
                                         View all 
                                         <i class="fa-solid fa-arrow-right"></i>
                                     </a>
-                                    <div class="top-seller-banner__media">
+                                    <div class="top-seller-banner__media" data-aos="fade-left">
                                         <img src="./img/promo-banner-2.png" alt="Promo Gift Card" class="top-seller-banner__image" />
                                     </div>
                                 </div>
@@ -1382,7 +1412,7 @@
                   <div class="col">
                         <!-- Start Footer Container -->
                         <div class="footer__container">
-                              <div class="row row-cols-4 gx-5">
+                              <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
                                     <div class="col-3">
                                          <!-- Statr Section-one -->
                                           <section class="footer__section footer__section--about">
@@ -1449,7 +1479,7 @@
                                           </section>
                                           <!-- End Section-two -->
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-4 gy-md-2">
                                           <!-- Statr Section-three -->
                                          <section class="footer__section footer__section--payment">
                                                <h2 class="footer__title">Service</h2>
@@ -1468,7 +1498,7 @@
                                          </section>
                                           <!-- End Section-three -->
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-2 gy-lg-2">
                                           <!-- Statr Section-four -->
                                           <section class="footer__section footer__section--follow">
                                                 <h2 class="footer__title">Follow Us</h2>
@@ -1521,7 +1551,7 @@
                                     </div>
                               </div>
                         </div>
-                        <div class="col">
+                        <div class="col gy-md-2">
                               <div class="footer__certification">
                                     <h2 class="footer__title">certification</h2>
                                     <div class="row">
@@ -1549,5 +1579,9 @@
 <!-- End Footer -->
 
 
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+       AOS.init();
+    </script>
 </body>
 </html>
