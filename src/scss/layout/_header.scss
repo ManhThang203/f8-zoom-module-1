@@ -5,54 +5,117 @@
     // Start Topbar
     &__topbar{
         height: 3.9rem;
+        line-height: 3.9rem;
         background: variables.$primary-color;
         box-shadow: 0px 4.206px 11.25px 0px rgba(244, 244, 244, 0.50);
-    }
-    &__nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
+        @include mixins.screen(md){
+            height: 6.9rem;
+            line-height: 6.9rem;
+        }
     }
     &__nav-left{
-        margin-left: 8.9rem;
+        display: flex;
+    }
+    &__link-right{
+         @include mixins.screen(md){
+            display: none;
+        }
     }
     &__link-right,
     &__select,
     &__account-link{
         color: variables.$color-header;
-        font-family: Quicksand;
+        font-family: "Quicksand";
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
         line-height: 1.8rem;
     }
+    &__hotline-mb{
+        display: flex;
+    }
+    &__icon-mb{
+        width: 3rem;
+        @include mixins.screen(md){
+             display: block !important;
+        }
+    }
+    &__hotline-md__icon{
+        @include mixins.screen(md){
+             display: block !important;
+        }
+    }
+    &__hotline-md__icon::before{
+        position: relative;
+        top: -2.4rem;
+        left: 0.5rem;
+        content: "\f095";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    &__hotline-mb__text{
+        color: var(--Greys-Colors-07, #FFF);
+        font-family: "Quicksand";
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 600;
+        @include mixins.screen(md){
+             display: block !important;
+        }
+    }
+    &__hotline-mb{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    &__hotline-md__icon{
+        display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 0.2rem solid #fff;
+        border-radius: 50%;
+        font-size: 1.2rem;
+    }
     &__nav-right{
         display: flex;
+        justify-content:end;
         gap: 1.5rem;
-        margin-right: 10.9rem;
     }
     &__select{
         border: none;
         outline: none;
         background: transparent;
+        @include mixins.screen(md){
+            display: none;
+        }
     }
     &__account{
         display: flex;
         align-items: center;
+         @include mixins.screen(md){
+            width: 8.3rem;
+        }
+        @include mixins.screen(md){
+            display: none;
+        }
     }
     // Start Main
     &__main{
         display: flex;
         justify-content: space-between;
         height: 9.5rem;
+        line-height: 9.5rem;
         background: variables.$background-header;
+        @include mixins.screen(md){
+            display: none;
+        }
     }
     &__logo{
         display: flex;
         align-items: center;
         gap: 1.6rem;
-        margin-left: 8.8rem;
     }
     &__logo-text{
         color: variables.$logo-text;
@@ -79,7 +142,6 @@
         line-height: 4.2;
         border: 1px solid variables.$color-header;
         border-radius: 99.9rem;
-        margin-right: 10.1rem;
         background-color : variables.$color-header;
     }
     &__select-category{
@@ -115,20 +177,45 @@
     &__bottom{
         background: variables.$color-header;
         height: 5.4rem;
-        line-height: 5.4rem;
         box-shadow: 0px 4.206px 11.25px 0px rgba(244, 244, 244, 0.50);
+         @include mixins.screen(md){
+            height: 6.4rem;
+            line-height: 6.4rem;
+            background: #fff;
+        }
     }
     &__menu{
         display: flex;
-        align-items: center;
-        gap: 2rem;
-        margin-left: -0.9rem;
+        gap: 1rem;
+        line-height: 5.4rem;
     }
     &__menu-link{
         color: variables.$logo-text;
         font-family: "Quicksand";
         font-size: 1.4rem;
         font-weight: 500;
+        @include mixins.screen(md){
+            display:none;
+        }
+    }
+    &__menu-item{
+        display: flex;
+        height: 6.4rem;
+    }
+    &__menu-item::after{
+        @include mixins.screen(md){
+            display:none;
+        }
+    }
+    &__icon-menu{
+        width: 3.4rem;
+        @include mixins.screen(md){
+            display: block !important;
+        }
+    }
+    &__search-menu,
+    &__user-menu    {
+        width: 3rem;
     }
     &__menu-item--has-dropdow::after{
         position: relative;
@@ -143,6 +230,7 @@
     &__hotline{
         display: flex;
         align-items: center;
+        justify-content: end;
         gap: 0.8rem;
         padding-right: 1.6rem;
     }
@@ -152,10 +240,13 @@
         border: 0.2rem solid variables.$color-hotline;
         border-radius: 50%;
         font-size: 1.2rem;
+        @include mixins.screen(md){
+            display: none;
+        }
     }
     &__hotline-icon::before{
         position: relative;
-        top: -1.6rem;
+        top: 0.4rem;
         left: 0.5rem;
         content: "\f095";
         font-family: "Font Awesome 6 Free";
@@ -168,5 +259,18 @@
         font-family: "Quicksand";
         font-size: 1.4rem;
         font-weight: 600;
+        @include mixins.screen(md){
+            display: none;
+        }
+    }
+    &__search-menu{
+        @include mixins.screen(md){
+            display: block !important;
+        }
+    }
+    &__user-menu{
+        @include mixins.screen(md){
+            display: block !important;
+        }
     }
 }

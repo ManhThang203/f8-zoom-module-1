@@ -1,3 +1,4 @@
+@use "/scss/mixins";
 // Start Main Banner
 .main-banner{
     position: relative;
@@ -28,6 +29,22 @@
         border-radius: 50.6rem;
         opacity: 0.5;
         background: #FFD5C6;
+
+        @include mixins.screen(xl){
+            position: absolute;
+            right: -0.8rem;
+        }
+         @include mixins.screen(lg){
+            position: absolute;
+            right: -0.8rem;
+        }
+        @include mixins.screen(md){
+            position: absolute;
+            width: 40rem;
+            height: 40rem;
+            top: 1.3rem;
+            right: -5.8rem;
+        }
     }
     &__rounded-in{
         position: absolute;
@@ -39,6 +56,21 @@
         border-radius: 38.5rem;
         opacity: 0.5;
         background: #FFE4DB;
+        @include mixins.screen(xl){
+            position: absolute;
+            right: 4.9rem;
+        }
+        @include mixins.screen(lg){
+            position: absolute;
+            right: 4.9rem;
+        }
+         @include mixins.screen(md){
+            position: absolute;
+            width: 30rem;
+            height: 30rem;
+            top: 6.1rem;
+            right: -1.1rem;
+        }
     }
     &__round-color{
         position: absolute;
@@ -49,6 +81,27 @@
         height: 29.9rem;
         border-radius: 30.0rem;
         background: var(--Primary-Colors, #ED5A25);
+        @include mixins.screen(xxl){
+            position: absolute;
+            left: 63.5%;
+
+        }
+        @include mixins.screen(xl){
+            position: absolute;
+            left: 58.5%;
+
+        }
+        @include mixins.screen(lg){
+            position: absolute;
+            left: 43.5%;
+        }
+        @include mixins.screen(md){
+            position: absolute;
+            top: 9rem;
+            left: 47.4%;
+            width: 25rem;
+            height: 25rem;
+        }
         
     }
     &__character{
@@ -62,6 +115,29 @@
         border-radius: 50%;
         background: var(--Primary-Colors, #ED5A25);
         z-index: 0;
+        @include mixins.screen(xxl){
+            position: absolute;
+            left: 63.5%;
+
+        }
+        @include mixins.screen(xl){
+            position: absolute;
+            left: 58.5%;
+
+        }
+        @include mixins.screen(lg){
+            position: absolute;
+            left: 43.5%;
+
+        }
+         @include mixins.screen(md){
+            position: absolute;
+            width: 25rem;
+            height: 25rem;
+            top: 9.2rem;
+            left: 47.5%;
+
+        }
     }
     &__character img{
          position: absolute;
@@ -69,23 +145,53 @@
          top: 0;
          left: 0;
          z-index: 1;
+        @include mixins.screen(md){
+            width: 22.2rem;
+            top: 14px;
+            left: -3px;
+
+        }
     }
       &__gift--top-right{
             position: absolute;
             top: 8.5rem;
             right: 8.1rem;
+            @include mixins.screen(xl){
+            position: absolute;
+                right: 4.1rem;
+
+            }
+            @include mixins.screen(lg){
+                position: absolute;
+                right: 4.1rem;
+            }
+             @include mixins.screen(md){
+                position: absolute;
+                right: 0.1rem;
+            }
+
+    }
+    &__gift--top-right img{
+           @include mixins.screen(md){
+                width: 10rem;
+                height: 10rem;
+            }
     }
      &__gift--bottom-left{
         position: absolute;
         bottom: 4.1rem;
         right: 40.6rem;
+         @include mixins.screen(md){
+            bottom: 4.1rem;
+            right: 24.6rem;
+        }
 
     }
 }
 
 // Start Card Left
 .card{
-  position: relative;
+    position: relative;
     display: inline-block;
     top: 3.1rem;
     left: 56%;
@@ -95,6 +201,29 @@
     border-radius: 1.7rem;
     background: var(--Secondary-Colors-12, #FFF4F1);
     box-shadow: 0px 2.1rem 1.9rem 0px rgba(255, 235, 230, 0.5);
+        @include mixins.screen(xxl){
+            position: absolute;
+            left: 48%;
+
+        }
+        @include mixins.screen(xl){
+            position: absolute;
+            left: 40.5%;
+
+        }
+        @include mixins.screen(lg){
+            position: absolute;
+            top: 4.1rem;
+            left: 4.5%;
+        }
+        @include mixins.screen(md){
+            position: absolute;
+           width: 14rem;
+            height: 16.2rem;
+            top: 6.1rem;
+            left: 13.5%;
+        }
+       
     &__inner{
        position: absolute;
     top: 0.6rem;
@@ -106,6 +235,14 @@
     border-radius: 1.7rem;
     background: #FFF;
     box-shadow: 0px 1.3rem 1.9rem 0px rgba(255, 247, 245, 0.5);
+
+     @include mixins.screen(md){
+            position: absolute;
+            width: 12.8rem;
+            height: 15.1rem;
+            top: 0.6rem;
+            right: 0.6rem;
+        }
     }
    
     &__title{
@@ -240,6 +377,32 @@
         border-radius: 1.3rem;
         background: #E2D3E9;
         box-shadow: 0 0.9rem 2.7rem 0 rgba(238, 219, 214, 0.5);
+        @include mixins.screen(xxl){
+            position: absolute;
+            bottom: 4.4rem;
+            left: 87.3%;
+
+
+        }
+        @include mixins.screen(xl){
+            position: absolute;
+            bottom: 3.4rem;
+            left: 85.3%;
+            transform: rotate(58deg);
+
+
+        }
+        @include mixins.screen(lg){
+            position: absolute;
+            bottom: 2.4rem;
+            left: 79.3%;
+            transform: rotate(60deg);
+
+        }
+         @include mixins.screen(md){
+           display: none;
+
+        }
     &__inner{
         position: absolute;
         top: 0.4rem;
@@ -429,7 +592,6 @@
     &__item{
         position: relative;
         overflow: hidden;
-        width: 64.7rem;
         height: 25.1rem;
         border-radius: 3rem;
         background: #FFF4F1;
@@ -488,7 +650,20 @@
 .category-tabs{
     margin-top: 2.5rem;
     &__item-width{
-        width: 181px;
+        // width: 181px;
+    }
+    &__item-md{
+        @include mixins.screen(md){
+            display: block !important;
+        }
+    }
+    &__language-selector{
+        @include mixins.screen(md){
+            display: block !important;
+        }
+    }
+    &__item{
+        display: none;
     }
     &__button{
         width: 15rem;
@@ -514,9 +689,9 @@
 .product-card{
     display: flex;
     flex-direction: column;
-    width: 220px;
-    height: 330px;
-    border-radius: 30px;
+    width: 22rem;
+    height: 33rem;
+    border-radius: 3rem;
     border: 1px solid var(--Greys-Colors-06, #F2F2F2);
     background: #FFF;
     &__image-wrapper{
@@ -527,8 +702,8 @@
     }
     &__image-wrapper i{
         position: absolute;
-        top: 0.6rem;
-        right: 1.6rem;
+        top: 0.9rem;
+        right: 2.9rem;
         z-index: 999;
         display: inline-block;
         width: 2.4rem;
@@ -553,6 +728,7 @@
     }
     &__thumb-link{
         display: flex;
+        width: 90%;
     }
     &__info{
         display: flex;
@@ -762,6 +938,7 @@
     &__actions{
         height: 4rem;
         line-height: 4rem;
+        text-align: end;
     }
     &__link{
         color: var(--Greys-Colors-01, #404040);
@@ -783,6 +960,9 @@
         overflow: hidden;
         border-radius: 3rem;
         background: #FFF4F1;
+         @include mixins.screen(md){
+            display: none;
+        }
     }
     &__shape--outer{
         position: absolute;
@@ -898,6 +1078,15 @@
         line-height: 5.2rem;
         border-radius: 1rem;
         background: var(--Secondary-Colors-12, #FFF4F1);
+        @include mixins.screen(xxl){
+            width: 29.5rem;
+        }
+        @include mixins.screen(xl){
+            width: 25.5rem;
+        }
+        @include mixins.screen(lg){
+            width: 28.5rem;
+        }
     }
     &__title{
         margin-left: 1.7rem;
@@ -941,6 +1130,15 @@
     margin-top: 3.6rem;
     width: 34.4rem;
     transition: all 0.4s ease;
+    @include mixins.screen(xxl){
+        width: 29.4rem;
+    }
+    @include mixins.screen(xxl){
+        width: 24.4rem;
+    }
+    @include mixins.screen(lg){
+        width: 28.4rem;
+    }
     &:hover{
         transform: translateX(1.5rem);
     }
@@ -991,8 +1189,7 @@
 }
 // Start news-card
 .news-card{
-    width: 37.2rem;
-    height: 39.6rem;
+    height: 41.6rem;
     border-radius: 2rem;
     border: 0.1rem solid var(--Background-02, #EDEDED);
     background: #FFF;
@@ -1001,16 +1198,37 @@
     &:hover{
         border-color: #ED5A25;
     }
+    @include mixins.screen(xl){
+        height: 31.6rem;
+    }
+    @include mixins.screen(lg){
+        height: 27.6rem;
+    }
+    @include mixins.screen(lg){
+        height: 51.6rem;
+    }
     &__image{
+        width: 90%;   
+        margin: 0 auto;
         display: flex;
-        margin: 2.3rem 2.3rem 0 2.3rem;
+        justify-content: center;
+        margin-top: 2rem;
     }
     &__description{
-        margin: 22px;
+        width: 32.7rem;
+        margin: 2rem 0 0 2rem;
         color: var(--Greys-Colors-01, #404040);
         font-family: "Poppins";
         font-size: 1.5rem;
         font-weight: 400;
+
+        @include mixins.screen(xl){
+            width: 24.6rem;
+        }
+        @include mixins.screen(xl){
+            width: 18.2rem;
+            font-size: 1.4rem;
+        }
     }
 }
 
