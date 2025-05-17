@@ -103,6 +103,67 @@
             display: none;
         }
     }
+    &__account-nav > li {
+        position: relative;
+    }
+    &__account-nav > li > a::after{
+        position: relative;
+        display: inline-block;
+        left: 0.5rem;
+        content: "\f078";
+        font-family: "Font Awesome 6 Free";
+        right: 1.5rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #fff;
+        transition: all 0.4s ease;
+    }
+    &__account-submenu{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0);
+        transform-origin: top;
+        gap: 0.5rem;
+        top: 4.1rem;
+        right: -7.5rem;
+        z-index: 1;
+        width: 21.9rem;
+        min-height: 21.2rem;
+        border-radius: 1rem;
+        border: 0.1rem solid #FFF0EC;
+        background: #FFF;
+        box-shadow: 0.3rem 0.8rem 1.5rem 0px rgba(215, 215, 215, 0.5);
+        transition: all 0.4s ease;
+    }
+    &__account-nav > li:hover &__account-submenu{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+    &__account-submenu li{
+       width: 17.3rem;
+    }
+    &__account-submenu li:hover{
+        background: var(--Secondary-Colors-11, #FFDBCE);
+        border-radius: 0.5rem;
+    }
+    &__account-submenu li:first-child{
+       margin-top: 1rem;
+    }
+    &__account-submenu a{
+        display: block;
+        height: 3.2rem;
+        line-height: 3.2rem;
+        text-align: center;
+        font-family: "Quicksand";
+        color: var(--Color-Text-01, #323232);
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
     // Start Main
     &__main{
         display: flex;
@@ -146,7 +207,8 @@
         border-radius: 99.9rem;
         background-color : variables.$color-header;
     }
-    &__select-category{
+    &__search-nav > li > a{
+        display: inline-block;
         margin-left: 1.8rem;
         color: variables.$color-search;
         font-family: "Manrope";
@@ -159,10 +221,73 @@
         outline: none;
         border: none;
     }
+    &__search-nav > li:hover  &__search-submenu{
+        opacity: 1;
+        transform: scale(1);
+    }
+     &__search-nav > li:hover  a::after{
+        color: #ED5A25;
+
+    }
+     &__search-nav > li > a::after{
+        position: relative;
+        left: 0.5rem;
+        content: "\f078";
+        font-family: "Font Awesome 6 Free";
+        right: 1.5rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #404040;
+    }
+
+    &__search-nav > li {
+        position: relative;
+    }
+    &__search-submenu{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: top;
+        gap: 0.5rem;
+        width: 14.7rem;
+        min-height: 21.7rem;
+        border-radius: 1rem;
+        border: 0.1rem solid #FFF0EC;
+        background: #FFF;
+        box-shadow: 0.3rem 0.8rem 1.5rem 0rem rgba(215, 215, 215, 0.50);
+        top: 6.2rem;
+        z-index: 1;
+        transition: all 0.5s ease;
+    }
+    &__search-submenu li {
+        margin-left: 1.4rem;
+        margin-right: 1.4rem;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+    }
+    &__search-submenu li:hover {
+        background: var(--Secondary-Colors-11, #FFDBCE);
+    }
+    &__search-submenu li:first-child {
+        margin-top: 1.4rem;
+    }
+    
+    &__search-submenu a {
+        display:block;
+        height: 4.4rem;
+        line-height: 4.4rem;
+        text-align: center;
+        color: var(--Color-Text-01, #323232);
+        font-family: "Quicksand";
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
     &__dividing-brick{
         width: 0.1rem;
         height: 3.9rem;
-        background: #FFF0EC;
+        background: #ebd8d3;
     }
     &__search-input{
         color: variables.$color-search;
@@ -188,7 +313,7 @@
     }
     &__menu{
         display: flex;
-        gap: 1rem;
+        gap: 2rem;
         line-height: 5.4rem;
     }
     &__menu-link{
@@ -219,8 +344,16 @@
     &__user-menu    {
         width: 3rem;
     }
-    &__menu-item--has-dropdow::after{
+    &__menu-itemnav > li > a{
+        color: var(--Color-Text-03, #565656);
+        font-family: "Quicksand";
+        font-size: 1.4rem;
+        font-weight: 500;
+        transition: all 0.4s ease;
+    }
+    &__menu-itemnav > li > a::after{
         position: relative;
+        display: inline-block;
         left: 0.5rem;
         content: "\f078";
         font-family: "Font Awesome 6 Free";
@@ -228,6 +361,261 @@
         font-weight: 600;
         font-size: 1.2rem;
         color: variables.$logo-text;
+        transition: all 0.4s ease;
+    }
+    &__menu-itemnav > li:hover > a{
+        color: #ED5A25;
+    }
+     &__menu-itemnav > li:hover a::after{
+        position: relative;
+        display: inline-block;
+        transform: rotate(180deg);
+        color: #ED5A25;
+    }
+    // &__menu-overlay{
+    //     position: fixed;
+    //     inset: 0;
+    //     opacity: 0;
+    //     z-index: 998;
+    //     visibility: hidden;
+    //     background: rgba(0,0,0,0.8);
+    //     transition: all 0.4s ease;
+    // }
+    &__menu-itemnav > li{
+        position: relative;
+    }
+    &__menu-itemnav:hover  &__menu-overlay{
+         opacity: 1;
+         visibility: visible;
+    }
+    &__menu-itemnav > li:hover &__menu-itemsubmenu{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+    &__menu-itemsubmenu{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        opacity:0;
+        visibility: hidden;
+        transform: scale(0);
+        transform-origin: 40% top;
+        gap: 0.5rem;
+        top: 5.5rem;
+        right: -12.2rem;
+        z-index: 1;
+        width: 21.9rem;
+        min-height: 21.2rem;
+        border-radius: 1rem;
+        border: 0.1rem solid #FFF0EC;
+        background: #FFF;
+        box-shadow: 0.3rem 0.8rem 1.5rem 0px rgba(215, 215, 215, 0.5);
+        transition: all 0.4s ease;
+    }
+    &__menu-itemsubmenu li{
+        margin-left: 1.4rem;
+        width: 189px;
+        padding: 4px 8px;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+    }
+    &__menu-itemsubmenu li:hover{
+        background: var(--Secondary-Colors-11, #FFDBCE);
+    }
+    &__menu-itemsubmenu li:first-child{
+        margin-top: 1.4rem;
+    }
+    &__menu-itemsubmenu a{
+        display: block;
+        height: 3.2rem;
+        line-height: 3.2rem;
+        color: var(--Color-Text-01, #323232);
+        font-family: "Quicksand";
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    &__menu-phonenav > li{
+        position: relative;
+    }
+    &__menu-phonenav  li{
+        position: relative;
+    }
+    &__menu-phonenav > li > a {
+        color: #404040;
+        font-family: "Quicksand";
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    &__menu-phonenav > li > a::after {
+        position: relative;
+        display: inline-block;
+        left: 0.5rem;
+        content: "\f078";
+        font-family: "Font Awesome 6 Free";
+        right: 1.5rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: variables.$logo-text;
+        transition: all 0.4s ease;
+    }
+    
+    &__menu-phonesubmenu{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        overflow: auto;
+        visibility: hidden;
+        transform: scale(0);
+        transform-origin: 0% top;
+        gap: 2.3rem;
+        top: 5.4rem;
+        z-index: 1;
+        width: 120rem;
+        height: 40rem;
+        border-radius: 1rem;
+        border: 0.1rem solid #FFF0EC;
+        background: #FFF;
+        box-shadow: 0.3rem 0.8rem 1.5rem 0px rgba(215, 215, 215, 0.5);
+        transition: all 0.4s ease;
+    }
+    &__menu-phonenav > li:hover &__menu-phonesubmenu{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+
+    }
+    &__menu-phonenav > li:hover > a::after{
+       position: relative;
+       display: inline-block;
+       transform: rotate(180deg);
+       color: #ED5A25;
+
+    }
+    &__menu-phonenav > li:hover > a{
+        transition: all 0.4s ease;
+    }
+    &__menu-phonenav > li:hover > a{
+       color: #ED5A25;
+
+    }
+    &__menu-phonesubmenu li {
+        margin-left: 4.8rem;
+        width: 24.3rem;
+        min-height: 2.8rem;
+        transition: all 0.4s ease;
+    }
+     &__menu-phonesubmenu li:first-child {
+        margin-top: 3.9rem;
+    }
+    &__menu-phonesubmenu > li:first-child > a::after{
+        position: relative;
+        display: inline-block;
+        left: 14.5rem;
+        content: "\f078";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: variables.$logo-text;
+        transition: all 0.4s ease;
+    }
+    &__menu-phonesubmenu > li:first-child:hover > a::after{
+        position: relative;
+        display: inline-block;
+        transform: rotate(-90deg);
+        color: #ED5A25;
+    }
+    &__menu-phonesubmenu > li:nth-child(2) > a::after{
+        position: relative;
+        display: inline-block;
+        left: 9.1rem;
+        content: "\f078";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: variables.$logo-text;
+        transition: all 0.4s ease;
+    }
+     &__menu-phonesubmenu > li:nth-child(2):hover > a::after{
+        position: relative;
+        display: inline-block;
+        transform: rotate(-90deg);
+        color: #ED5A25;
+    }
+    &__menu-phonesubmenu > li:nth-child(3) > a::after{
+        position: relative;
+        display: inline-block;
+        left: 8.6rem;
+        content: "\f078";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: variables.$logo-text;
+        transition: all 0.4s ease;
+    }
+     &__menu-phonesubmenu > li:nth-child(3):hover > a::after{
+        position: relative;
+        display: inline-block;
+        transform: rotate(-90deg);
+        color: #ED5A25;
+    }
+    &__menu-phonesubmenu > li:nth-child(4) > a::after{
+        position: relative;
+        display: inline-block;
+        left: 7.3rem;
+        content: "\f078";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: variables.$logo-text;
+        transition: all 0.4s ease;
+    }
+     &__menu-phonesubmenu > li:nth-child(4):hover > a::after{
+       position: relative;
+        display: inline-block;
+        transform: rotate(-90deg);
+        color: #ED5A25;
+    }
+    &__menu-phonesubmenu > li:last-child > a::after{
+        position: relative;
+        display: inline-block;
+        left: 15rem;
+        content: "\f078";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: variables.$logo-text;
+        transition: all 0.4s ease;
+    }
+     &__menu-phonesubmenu > li:last-child:hover > a::after{
+        position: relative;
+        display: inline-block;
+        transform: rotate(-90deg);
+        color: #ED5A25;
+    }
+    &__menu-phonesubmenu a {
+        display: block;
+        height: 3.5rem;
+        padding-left: 0.6rem;
+        line-height: 3.5rem;
+        color: var(--Text-colors-01, #323232);
+        font-family: "Manrope";
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    &__wrapper{
+        position: absolute;
+        top: -38px;
+        left: 100%;
+        display: flex;
+        opacity: 0;
+        visibility: 0;
+        transition: all 0.4s ease;
+    }
+    &__menu-phonesubmenu > li:hover &__wrapper{
+        opacity: 1;
+        visibility: visible;
     }
     &__hotline{
         display: flex;
@@ -245,6 +633,9 @@
         @include mixins.screen(md){
             display: none;
         }
+    }
+    &__menu-phonesubmenu li:hover{
+        background: var(--Primaries-and-grays-05, #F2F2F2);
     }
     &__hotline-icon::before{
         position: relative;
