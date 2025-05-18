@@ -83,7 +83,6 @@
     &__nav-right{
         display: flex;
         justify-content:end;
-        gap: 1.5rem;
     }
     &__select{
         border: none;
@@ -337,7 +336,7 @@
     &__icon-menu{
         width: 3.4rem;
         @include mixins.screen(md){
-            display: block !important;
+            display: block;
         }
     }
     &__search-menu,
@@ -345,6 +344,9 @@
         width: 3rem;
     }
     &__menu-itemnav{
+        @include mixins.screen(lg){
+           display: none;
+        }
          @include mixins.screen(sm){
            display: none;
         }
@@ -433,6 +435,9 @@
     }
     &__menu-phonenav{
         position: relative;
+        @include mixins.screen(lg){
+            display: none;
+        }
         @include mixins.screen(sm){
             display: none;
         }
@@ -661,5 +666,150 @@
         @include mixins.screen(md){
             display: block !important;
         }
+    }
+}
+// Start nav-wrapper
+.nav-wrapper{
+    @include mixins.screen(md){
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 999;
+            width: 85%;
+            translate: -101%;
+            color: #000;
+            background: #fff;
+            transition: all 0.4s ease;
+    }
+    @include mixins.screen(md){
+        &-image,
+        &-text,
+        .nav{
+            display: block;
+        }
+        &__logo{
+            display: flex;
+            align-items: center;
+            gap: 1.1rem;
+            margin-top: 2.8rem;
+            margin-left: 2.7rem;
+        }
+        &-text{
+            color: #404040;
+            font-family: "Poppins";
+            font-size: 2.3rem;
+            font-weight: 600;
+            line-height: 2.3rem;
+        }
+        &-highlight{
+            color: var(--Primary-Colors, #ED5A25);
+            font-family: "Poppins";
+            font-size: 2.3rem;
+            font-weight: 600;
+            line-height: 2.3rem;
+        }
+        &__dot{
+            width: 100%;
+            height: 0.1rem;
+            margin-top: 2rem;
+            background: #F2F2F2;
+        }
+        &--close{
+            flex: 1;
+            text-align: end;
+            font-size: 3.4rem;
+            margin-right: 2.7rem;
+            color: #787777;
+        }
+    }
+}
+.drapwer-open{
+    display: flex;
+}
+#drapwer:checked ~ .nav-wrapper{
+    translate: 0;
+}
+.drapwer-overlay{
+    @include mixins.screen(md){
+       display: block;
+       position: fixed;
+       inset: 0;
+       opacity: 0;
+       z-index: 998;
+       visibility: hidden;
+       background: rgba(0,0,0,0.6);
+       transition: all 0.4s ease;
+    }
+}
+#drapwer:checked ~ .drapwer-overlay{
+    opacity: 1;
+    visibility: visible;
+}
+// Start nav-menu
+.nav{
+    @include mixins.screen(md){
+        margin-left: 2.7rem;
+    }
+}
+.nav a{
+    @include mixins.screen(md){
+        color: var(--Color-Text-03, #565656);
+        font-family:"Quicksand";
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}
+.nav  li:first-child{
+    @include mixins.screen(md){
+        margin-top: 2.8rem;
+    }
+}
+.nav li:first-child a::after{
+    @include mixins.screen(md){
+        position: relative;
+        display: inline-block;
+        content: "\f078";
+        font-family: "Font Awesome 6 Free";
+        right: -60%;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #404040;
+        transition: all 0.4s ease;
+    }
+}
+.nav li:first-child:hover a::after,
+.nav li:nth-child(2):hover a::after,
+.nav li:last-child:hover a::after
+{
+    @include mixins.screen(md){
+        transform: rotate(-90deg);
+        color: #ED5A25;
+    }
+}
+.nav li:nth-child(2) a::after{
+    @include mixins.screen(md){
+        position: relative;
+        display: inline-block;
+        content: "\f078";
+        font-family: "Font Awesome 6 Free";
+        right: -72.3%;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #404040;
+        transition: all 0.4s ease;
+    }
+}
+.nav li:last-child a::after{
+    @include mixins.screen(md){
+        position: relative;
+        display: inline-block;
+        content: "\f078";
+        font-family: "Font Awesome 6 Free";
+        right: -66%;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #404040;
+        transition: all 0.4s ease;
     }
 }

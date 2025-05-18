@@ -117,7 +117,37 @@
                                     <a href="#!" class="header__menu-link">
                                         Trang chủ
                                     </a>
-                                    <img src="./img/icon-menu.svg" alt="icon-menu" class="header__icon-menu" style="display: none;">
+                                    <label for="drapwer" class="drapwer-open">
+                                        <img src="./img/icon-menu.svg" alt="icon-menu" class="header__icon-menu" hidden>
+                                    </label>
+                                    <input type="checkbox" id="drapwer" hidden>
+                                    <div class="drapwer-overlay" hidden></div>
+                                    <div class="nav-wrapper">
+                                        <div class="nav-wrapper__logo" hidden>
+                                            <a href="#">
+                                                <img src="./img/logo-header.png" alt="logo-header" class="nav-wrapper-image" hidden>
+                                            </a>
+                                            <span class="nav-wrapper-text" hidden>
+                                                <strong>Card</strong>
+                                                <strong class="nav-wrapper-highlight">Cardtob</strong>
+                                            </span>
+                                            <label for="drapwer" class="nav-wrapper--close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </label>
+                                        </div>
+                                        <div class="nav-wrapper__dot"></div>
+                                        <ul class="nav" hidden>
+                                            <li>
+                                                <a href="#!">Card voucher</a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">Top-Up</a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">Contact us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
                                 <li class="header__menu-phone header__menu-item--has-dropdow">
                                     <ul class="header__menu-phonenav">
