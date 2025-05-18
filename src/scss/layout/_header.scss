@@ -344,6 +344,11 @@
     &__user-menu    {
         width: 3rem;
     }
+    &__menu-itemnav{
+         @include mixins.screen(sm){
+           display: none;
+        }
+    }
     &__menu-itemnav > li > a{
         color: var(--Color-Text-03, #565656);
         font-family: "Quicksand";
@@ -435,11 +440,11 @@
         font-size: 1.4rem;
         font-weight: 500;
     }
-    &__menu-phonenav > li{
+    &__menu-phonenav{
         position: relative;
-    }
-    &__menu-phonenav  li{
-        position: relative;
+        @include mixins.screen(sm){
+            display: none;
+        }
     }
     &__menu-phonenav > li > a {
         color: #404040;
@@ -470,7 +475,7 @@
         transform: scale(0);
         transform-origin: 0% top;
         gap: 2.3rem;
-        top: 5.4rem;
+        top: 5.6rem;
         z-index: 1;
         width: 120rem;
         height: 40rem;
@@ -606,11 +611,11 @@
     }
     &__wrapper{
         position: absolute;
-        top: -38px;
-        left: 100%;
+        top: -0.1rem;
+        left: 26%;
         display: flex;
         opacity: 0;
-        visibility: 0;
+        visibility: hidden;
         transition: all 0.4s ease;
     }
     &__menu-phonesubmenu > li:hover &__wrapper{
