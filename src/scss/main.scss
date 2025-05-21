@@ -8,6 +8,8 @@
 // Pages
 @use "./page/home";
 @use "./page/collection";
+@use "./page/payment.scss";
+@use "./page/account.scss";
 
 // Component
 @use "./components/button";
